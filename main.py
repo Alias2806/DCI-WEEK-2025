@@ -45,14 +45,20 @@ for i in range(len(input_string)):
 #print out the result
 print(result)
 """
+
+#user input the number of items purchased(number of loops to be done)
 num_of_items_purchased = int(input("Enter the number of items purchased: "))
+#to find out if customer has VIP discount
 customer_type = input("Enter customer type (Regular/VIP): ")
+
+#for receipt generation
 total_price: float = 0
 item_totals = []
 item_prices = []
 item_quantities = []
 item_names = []
 
+#where user inputs the product details
 def selectProduct():
     item_name = input("Item name: ")
     item_price = float(input("Item price: "))
@@ -63,25 +69,26 @@ def selectProduct():
     item_totals.append(item_quantity * item_price)
     return item_price * item_quantity
 
-
-
+#main loop that depends on num of items purchased
 for i in range(1, num_of_items_purchased + 1):
     print("Enter details for item " + str(i))
     total_price += selectProduct()
 
 subtotal = total_price
 
+#discount application
 vip_discount: float = 0
 if customer_type.lower() == "vip":
     vip_discount = total_price * 0.1
     total_price = total_price - (total_price * 0.1)
 
+#tax application
 tax: float = 0
 if total_price > 500:
     tax = total_price * 0.05
     total_price = total_price + (total_price * 0.05)
 
-
+#Receipt generation
 print("=======Grocery Store Receipt=======")
 for i in range(len(item_names)):
     print("Item: " + str(item_names[i]) + "| Qty: " + str(item_quantities[i]) + "| Price: PHP" + str(item_prices[i]) + "| Total: PHP" + str(item_totals[i]))
