@@ -45,7 +45,7 @@ for i in range(len(input_string)):
 #print out the result
 print(result)
 """
-
+# HARD PROBLEM
 #user input the number of items purchased(number of loops to be done)
 num_of_items_purchased = int(input("Enter the number of items purchased: "))
 #to find out if customer has VIP discount
