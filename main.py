@@ -1,4 +1,3 @@
-
 # EASY PROBLEM
 from math import factorial
 print ("EASY PROBLEM")
