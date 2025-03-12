@@ -1,13 +1,13 @@
 # EASY PROBLEM
 from math import factorial
-print ("\nEASY PROBLEM")
+print ("EASY PROBLEM")
 #imported factorial function from python math library
 #accept user input and store into num, also typecast into int
 num = int(input("Input: "))
 #print the output with the factorial function of num
 print("Output: " + str(factorial(num)))
 
-print("\n EASY PROBLEM alt solution")
+print("\nEASY PROBLEM alt solution")
 #accept user input
 num2 = int(input("Input: "))
 #set default value for res as 1 since 0! is 1
