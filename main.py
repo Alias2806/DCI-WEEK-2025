@@ -1,4 +1,4 @@
-"""
+
 # EASY PROBLEM
 from math import factorial
 print ("EASY PROBLEM")
@@ -44,8 +44,9 @@ for i in range(len(input_string)):
         result += input_string[i] + " "
 #print out the result
 print(result)
-"""
+
 # HARD PROBLEM
+print("\nHARD PROBLEM")
 #user input the number of items purchased(number of loops to be done)
 num_of_items_purchased = int(input("Enter the number of items purchased: "))
 #to find out if customer has VIP discount
