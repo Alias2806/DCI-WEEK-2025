@@ -1,6 +1,6 @@
 # EASY PROBLEM
 from math import factorial
-
+print ("EASY PROBLEM")
 #imported factorial function from python math library
 #accept user input and store into num, also typecast into int
 num = int(input("Input: "))
@@ -8,6 +8,7 @@ num = int(input("Input: "))
 print("Output: " + str(factorial(num)))
 
 #AVERAGE PROBLEM
+print ("AVERAGE PROBLEM")
 #accept user input and store into input_string
 input_string = input("Enter a string: ")
 #create empty map
